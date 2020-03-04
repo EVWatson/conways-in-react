@@ -1,19 +1,11 @@
 import React from 'react';
 import './App.css';
-import CellGrid from "./CellGrid";
+import Game from "./Game";
 
 function App() {
   return (
       <>
-    <div className="App">
-      <CellGrid/>
-    </div>
-      <div className="App">
-      <CellGrid/>
-      </div>
-  <div className="App">
-    <CellGrid/>
-  </div>
+        <Game />
         </>
   );
 }
