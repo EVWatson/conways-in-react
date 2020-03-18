@@ -22,26 +22,31 @@ import Cell from "./Cell";
 //     return grid;
 // };
 
-// const totalCells = (rows, columns) => {
-//     let cells = [];
-//     for (let i = 0; i < rows * columns; i++) {
-//         cells.push(
-//             <Cell key={i}/>
-//         )
-//     }
-//     return cells;
+
+
+// const CellGrid = (rows, columns) => {
+//    const row = [];
+//    row.fill(<Cell />, 0, 3);
+//
+//    let grid = [];
+//
+//    for (let i = 0; i < 3; i++) {
+//        grid.push(<div key={i}>{row}</div>);
+//    }
+//
+//     return grid;
 // };
 
 const CellGrid = (rows, columns) => {
     let grid = [];
-    let row = new Array(2);
-    for (let i = 0; i < row.length; i++) {
-        for (let column = 0; column < 3; column++){
-        grid.push(<div key={column+1}>{<Cell key={row}/>}</div>)
-        }
+    let row = [<Cell/>];
+
+    for (let i = 0; i > 3; i++) {
+        grid.push(<div>{[row}</div>]);
     }
-   return grid;
+    return grid;
 };
+
 
 
 export default CellGrid;
