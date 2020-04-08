@@ -1,9 +1,10 @@
 import React from "react";
+import './App.css';
 
 
 const Cell = () => {
     return (
-        <button>
+        <button className="cell">
         </button>
     )
 };
