@@ -8,11 +8,12 @@ class Game extends React.Component {
 
     render() {
         return (
-            <>
+            <div className="cellGrid">
+
                 <CellGrid />
 
-            </>
-    )
+            </div>
+        )
     }
 
 }

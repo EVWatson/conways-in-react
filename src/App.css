@@ -1,4 +1,11 @@
+body {
+  margin: 0;
+}
 
+.row {
+  display: table;
+  margin-bottom: 0;
+}
 .cell {
   height: 50px;
   width: 50px;
@@ -7,8 +14,8 @@
   border-color: black;
 }
 
-.row {
-  text-align: center;
+.cellGrid {
+  margin-top: 10px;
+  margin-left: 20px;
 }
-
 
