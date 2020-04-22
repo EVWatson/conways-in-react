@@ -2,15 +2,15 @@ import React from "react";
 import Cell from "./Cell";
 
 
-const CellGrid = (rows, columns) => {
+const CellGrid = (props) => {
     let key = 0;
     let row = [];
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < props.columns; i++) {
 
         row.push(<Cell key={i}/>)
     }
-    return Array(3)
+    return Array(props.rows)
         .fill(row)
         .map(() =>
             <div
